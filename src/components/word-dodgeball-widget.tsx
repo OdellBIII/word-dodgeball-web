@@ -14,7 +14,7 @@ interface WordDodgeballWidgetState {
 }
 
 class WordDodgeballWidget extends Component<WordDodgeballWidgetProps, WordDodgeballWidgetState> {
-    private letterRefs: React.RefObject<LetterSelectorHandle>[];
+    private letterRefs: React.RefObject<LetterSelectorHandle | null>[];
     private intervalId: NodeJS.Timeout | null = null;
 
     constructor(props: WordDodgeballWidgetProps) {
